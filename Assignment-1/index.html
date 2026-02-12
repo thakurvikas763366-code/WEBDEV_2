@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Event Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <h1>🎯 Smart Event Dashboard</h1>
+  </header>
+
+  <main class="container">
+    <!-- LEFT: EVENT FORM -->
+    <section class="card form-card">
+      <h2 class="card-title">Add New Event</h2>
+
+      <form id="eventForm">
+        <label>Event Title:</label>
+        <input type="text" id="title" placeholder="Enter event title" />
+
+        <label>Event Date:</label>
+        <input type="date" id="date" />
+
+        <label>Category:</label>
+        <select id="category">
+          <option value="Conference">Conference</option>
+          <option value="Workshop">Workshop</option>
+          <option value="Seminar">Seminar</option>
+          <option value="Meetup">Meetup</option>
+        </select>
+
+        <label>Description:</label>
+        <textarea id="desc" placeholder="Write event description..."></textarea>
+
+        <button type="submit" class="btn primary">Add Event</button>
+
+        <p id="msg" class="msg"></p>
+      </form>
+    </section>
+
+    <!-- RIGHT: EVENT LIST -->
+    <section class="card events-card">
+      <div class="events-header">
+        <h2 class="card-title">My Events</h2>
+
+        <div class="actions">
+          <button id="clearAllBtn" class="btn light">Clear All Events</button>
+          <button id="sampleBtn" class="btn primary">Add Sample Events</button>
+        </div>
+      </div>
+
+      <div id="eventsContainer" class="events-container">
+        <p id="emptyText" class="empty-text">No events yet. Add your first event!</p>
+      </div>
+    </section>
+
+    <!-- BOTTOM: DOM MANIPULATION DEMO -->
+    <section class="card dom-card">
+      <h2 class="card-title">DOM Manipulation Demo</h2>
+      <div class="dom-box">
+        <span id="pressedKey">You Pressed: <b>None</b></span>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
