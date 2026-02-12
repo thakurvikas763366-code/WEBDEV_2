@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(180deg, #5c81d0, #5c81d0);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.topbar {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  margin-bottom: 18px;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  grid-template-rows: auto auto;
+  gap: 18px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.card-title {
+  color: #3d67d6;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+/* FORM */
+form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+  display: block;
+  color: #333;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  margin-top: 6px;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #d9d9d9;
+  outline: none;
+}
+
+form textarea {
+  height: 80px;
+  resize: none;
+}
+
+.btn {
+  border: none;
+  padding: 10px 12px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 0.2s;
+}
+
+.btn.primary {
+  background: #4c73d9;
+  color: white;
+}
+
+.btn.primary:hover {
+  background: #3a5cc0;
+}
+
+.btn.light {
+  background: #e8f1ff;
+  color: #3a5cc0;
+}
+
+.btn.light:hover {
+  background: #d4e6ff;
+}
+
+form button {
+  width: 100%;
+  margin-top: 14px;
+}
+
+.msg {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* EVENTS */
+.events-card {
+  min-height: 260px;
+}
+
+.events-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.events-container {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.empty-text {
+  color: #777;
+  font-weight: 600;
+  grid-column: 1/-1;
+}
+
+/* EVENT CARD */
+.event-card {
+  background: #dfe8f5;
+  border-radius: 10px;
+  padding: 12px;
+  position: relative;
+  border: 2px solid transparent;
+  transition: 0.2s;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+}
+
+.event-title {
+  font-weight: 800;
+  margin-bottom: 8px;
+  color: #222;
+}
+
+.event-date {
+  font-size: 13px;
+  margin-bottom: 8px;
+  color: #444;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.badge.conference { background: #bcd3ff; color: #1c3d9e; }
+.badge.workshop { background: #c4ffe2; color: #0b6b40; }
+.badge.seminar { background: #ffe5b7; color: #9a5b00; }
+.badge.meetup { background: #ffd2e8; color: #9b0c54; }
+
+.event-desc {
+  font-size: 13px;
+  color: #333;
+}
+
+.delete-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-weight: 900;
+  color: white;
+  background: #ff4b4b;
+}
+
+.delete-btn:hover {
+  background: #d83434;
+}
+
+/* Completed style manipulation */
+.event-card.completed {
+  opacity: 0.7;
+  border: 2px solid #2ecc71;
+}
+
+.event-card.completed .event-title {
+  text-decoration: line-through;
+}
+
+/* DOM DEMO */
+.dom-card {
+  grid-column: 1/-1;
+}
+
+.dom-box {
+  background: #f5f6f7;
+  border: 1px solid #e0e0e0;
+  padding: 12px;
+  border-radius: 7px;
+}
