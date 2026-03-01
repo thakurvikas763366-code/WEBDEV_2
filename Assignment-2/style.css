@@ -1,0 +1,192 @@
+        body {
+            background-color: rgb(6, 12, 85);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            padding: 18px 0 14px;
+            font-size: 22px;
+        }
+
+        /* wrapper for all content */
+        #main_wrapper {
+            padding: 0 30px 30px;
+        }
+
+        /* top row - two boxes side by side */
+        #top_row {
+            display: flex;
+            gap: 14px;
+            margin-bottom: 14px;
+        }
+
+        /* left box - search */
+        #search_main_container {
+            background-color: white;
+            border-radius: 6px;
+            padding: 14px 16px;
+            width: 380px;
+            flex-shrink: 0;
+        }
+
+        /* right box - weather */
+        #weather_info_container {
+            background-color: white;
+            border-radius: 6px;
+            padding: 14px 16px;
+            flex: 1;
+        }
+
+        #search_main_container h3,
+        #weather_info_container h3,
+        #console_container h3 {
+            font-size: 13px;
+            font-weight: bold;
+            color: #111;
+            margin: 0 0 10px 0;
+        }
+
+        /* search input row */
+        #search_city_box form {
+            display: flex;
+            gap: 6px;
+            margin-bottom: 0;
+        }
+
+        #city {
+            flex: 1;
+            padding: 6px 10px;
+            border: 1.5px solid #ccc;
+            border-radius: 4px;
+            font-size: 13px;
+            color: black;
+            background-color: white;
+            outline: none;
+        }
+
+        #city:focus {
+            border-color: #aaa;
+        }
+
+        #submit {
+            padding: 6px 14px;
+            background-color: #e8601c;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #submit:hover {
+            background-color: #cf5218;
+        }
+
+        /* search history */
+        #search_history_box {
+            margin-top: 14px;
+        }
+
+        #search_cities_box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 6px;
+        }
+
+        #search_cities_box span {
+            background-color: #e8601c;
+            color: white;
+            padding: 4px 13px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #search_cities_box span:hover {
+            background-color: #cf5218;
+        }
+
+        /* weather info rows */
+        .w_row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 10px;
+            background-color: #f5f6fa;
+            border-left: 3px solid #e8601c;
+            margin-bottom: 6px;
+            border-radius: 0 4px 4px 0;
+            font-size: 13px;
+        }
+
+        .w_row span:first-child {
+            color: #444;
+        }
+
+        .w_row span:last-child {
+            color: #111;
+            font-weight: bold;
+        }
+
+        #weather_placeholder {
+            color: #aaa;
+            font-size: 13px;
+        }
+
+        #error_msg {
+            color: #cc0000;
+            font-size: 13px;
+        }
+
+        /* console box - full width */
+        #console_container {
+            background-color: white;
+            border-radius: 6px;
+            padding: 14px 16px;
+        }
+
+        #console_box {
+            background-color: rgb(6, 12, 85);
+            color: #d0d8ff;
+            padding: 12px 14px;
+            border-radius: 5px;
+            font-family: monospace;
+            font-size: 12px;
+            min-height: 90px;
+            line-height: 1.85;
+        }
+
+        .sync_line {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-bottom: 1px;
+        }
+
+        .num_badge {
+            background-color: #e8601c;
+            color: white;
+            font-size: 10px;
+            font-weight: bold;
+            min-width: 16px;
+            height: 16px;
+            border-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .async_line {
+            border-left: 2px solid #e8601c;
+            padding-left: 9px;
+            margin-left: 4px;
+            color: #7eb8ff;
+            margin-bottom: 1px;
+        }
